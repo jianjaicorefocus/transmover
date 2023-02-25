@@ -4,7 +4,7 @@ if (session_status() == PHP_SESSION_NONE) {
 }
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 try {
-  $lundry = new mysqli("localhost", "username", "password", "database");
+  $lundry = new mysqli("sql12.freesqldatabase.com", "sql12600898", "gFsaGbnqdH", "sql12600898");
   $lundry->set_charset("utf8mb4");
 } catch(Exception $e) {
   error_log($e->getMessage());
